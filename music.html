@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teleflix - Music</title>
+  <link rel="stylesheet" href="music.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <img src="ChatGPT_Image_Apr_22__2025__11_02_52_PM-removebg-preview.png" class="logo-img">
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="webseries.html">Trailers</a>
+    <a href="music.html">Music</a>
+  </nav>
+</header>
+
+<!-- TITLE -->
+<h2 class="page-title">🎵 Music Lounge</h2>
+
+<!-- NOW PLAYING -->
+<section class="now-playing">
+
+  <h3>Now Playing</h3>
+
+  <div class="trailer-player">
+  <iframe
+    src="https://www.youtube.com/embed/JinJ2faTKBU"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+</section>
+
+<section class="audio-player">
+  <h3>🎧 KALABEDA KOLABEDA AUDIO</h3>
+
+  <audio controls>
+    <source src="KALABEDA KOLABEDA SONG (wav).wav" type="audio/wav">
+    Your browser does not support audio.
+  </audio>
+</section>
+
+
+
+<footer>
+  <p>© Teleflix 2025</p>
+</footer>
+
+<script>
+function playMusic(id){
+  document.querySelector('.player-wrapper iframe').src =
+  "https://www.youtube.com/embed/" + id + "?autoplay=1";
+}
+</script>
+
+</body>
+</html>
